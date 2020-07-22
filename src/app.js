@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(cors({ origin: 'http://localhost:8080/' }));
 
 // api
-app.use('/api', api);
+app.use('/api/v1', api);
 
 // 404 page handler
 app.use((request, response, next) => {
