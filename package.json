@@ -14,7 +14,11 @@
     "javascript"
   ],
   "author": "Prajwal Chapagain",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrajwalCH/express-api-boilerplate.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
