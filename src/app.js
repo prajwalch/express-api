@@ -10,7 +10,7 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
 
-const api = require('./api/index');
+const apiV1 = require('./api/index.v1');
 
 const app = express();
 app.use(morgan('common'));
@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(cors({ origin: 'http://localhost:8080/' }));
 
 // api
-app.use('/api/v1', api);
+app.use('/api/v1', apiV1);
 
 // 404 page handler
 app.use((request, response, next) => {
